@@ -1,0 +1,28 @@
+.profile-links {
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+
+  &__link {
+    width: clamp(35px, 3.289vw, 50px);
+    height: clamp(35px, 3.289vw, 50px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-i);
+    transition: all .4s;
+    position: relative;
+
+    &:hover {
+      background: #2858AA;
+    }
+
+
+    @media screen and (max-width: 1024px) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+}

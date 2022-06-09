@@ -1,0 +1,116 @@
+.header-bottom {
+  padding: 15px 0;
+  background-color: var(--color-a);
+  @media screen and (max-width: 1240px) {
+    .container {
+      padding: 0 5px;
+    }
+  }
+
+
+  &__logo {
+    max-width: Min(16.129vw, 200px);
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: Min(47.632vw, 724px) auto 1fr;
+    justify-content: space-between;
+    grid-gap: Min(3.684vw, 56px);
+
+    @media screen and (max-width: 1240px) {
+      grid-gap: 2.419vw;
+    }
+
+    @media screen and (max-width: 1024px) {
+      align-items: center;
+      grid-template-columns: 1fr auto auto;
+    }
+
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      grid-template-columns: 1fr auto;
+    }
+
+  }
+
+  &__left {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: clamp(40px, 4.868vw, 74px);
+    align-items: center;
+
+    @media screen and (max-width: 1240px) {
+      grid-gap: clamp(25px, 4.032vw, 50px)
+    }
+
+    @media screen and (max-width: 1240px) {
+        grid-gap: 2.419vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      grid-template-columns: 25% 1fr;
+
+      .header-bottom__logo {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__search {
+    width: 100%;
+    height: clamp(45px, 3.618vw, 55px);
+    position: relative;
+    background: var(--color-c);
+    border: 1px solid #E5E9F3;
+    border-radius: 5px;
+    outline: none;
+    text-indent: clamp(15px, 1.316vw, 20px);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 0.987vw, 15px);
+    line-height: 100%;
+    color: var(--color-d);
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--color-g);
+    }
+  }
+
+  &__form-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(20px, 1.974vw, 30px);
+
+  }
+
+  &__right {
+    margin-left: auto;
+    order: 1;
+  }
+}

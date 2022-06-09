@@ -1,0 +1,117 @@
+.header-top {
+  background-color: var(--color-c);
+  padding: clamp(10px, 1.316vw, 20px) 0;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+    justify-content: space-between;
+
+  }
+
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    grid-gap: 15px clamp(40px, 5vw, 76px);
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    flex-shrink: 0;
+  }
+
+  &__nav-item {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 0.987vw, 15px);
+    line-height: 100%;
+    color: var(--color-d);
+    position: relative;
+    padding: 0 calc(clamp(15px, 2.303vw, 35px) / 2);
+
+    @media screen and (max-width: 1240px) {
+      padding: 0 10px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      grid-gap: 10px;
+
+      svg {
+        flex-shrink: 0;
+        fill: var(--color-e);
+        transition: all .4s;
+
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+
+    &:hover {
+      color: var(--color-f);
+
+      & > a {
+        svg {
+          transform: scaleY(-1);
+        }
+      }
+
+      .sub-list {
+        opacity: 1;
+        visibility: visible;
+
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__valute {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, 0.987vw, 15px);
+    line-height: 110%;
+    color: var(--color-g);
+  }
+
+  &__value {
+    font-weight: 500;
+    color: var(--color-h);
+  }
+
+  &__download {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 0.987vw, 15px);
+    line-height: 110%;
+    text-decoration-line: underline;
+    color: var(--color-f);
+  }
+}
+
+
+
+
+
+
+
+
+
+

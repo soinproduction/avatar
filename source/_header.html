@@ -1,0 +1,211 @@
+<!-- обязательное условие  - это сохраннение классов
+    т.к по ним в js идет перестроение для мобильного меню -->
+
+<header class="header">
+    <div class="header-top">
+      <div class="container top-parrent">
+
+        <div class="header-top__inner replace-navigation">
+          <nav class="header-top__nav">
+            <ul class="header-top__nav-list">
+              <li class="header-top__nav-item">
+                <a href="#">
+                  О нас
+                  <svg width='11' height='7'>
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </a>
+
+                <ul class="sub-list">
+                  <li class="sub-list__item">
+                    <a href="#">
+                      Отзывы
+                    </a>
+                  </li>
+                  <li class="sub-list__item">
+                    <a href="#">
+                      Вопросы и ответы
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+              <li class="header-top__nav-item">
+                <a href="#">
+                  Каталог
+                  <svg width='11' height='7'>
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-top__nav-item">
+                <a href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="header-top__nav-item">
+                <a href="#">
+                  Учебный центр
+                </a>
+              </li>
+              <li class="header-top__nav-item">
+                <a href="#">
+                  Как сделать заказ
+                  <svg width='11' height='7'>
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-top__nav-item">
+                <a href="#">
+                  Контакты
+                  <svg width='11' height='7'>
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-top__left">
+            <p class="header-top__valute">
+              Курс валют:
+              <span class="header-top__value">
+                1 $ - 93.3 руб
+              </span>
+              .
+            </p>
+            <a href="#" download="#" class="header-top__download">
+              Скачать прайс-лист с видеообзорами
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__inner bottom-parrent">
+          <div class="header-bottom__left">
+            <a href="index.html" class="header-bottom__logo">
+              <img width="200" height="78" src="img/sprite/logo.svg" alt="logo">
+            </a>
+            <form class="header-bottom__form" action="/search/index.php">
+              <input id="title-search-input" placeholder="Поиск по сайту" type="text" autocomplete="off" class="header-bottom__search">
+              <button class="header-bottom__form-btn">
+                <svg width="18" height="18">
+                  <use href='img/sprite/sprite.svg#search'></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="header-bottom__middle data-replace">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="#">
+                  <svg width="35" height="35">
+                    <use href='img/sprite/sprite.svg#icon'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#">
+                  <svg width="35" height="35">
+                    <use href='img/sprite/sprite.svg#icon2'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#">
+                  <svg width="35" height="35">
+                    <use href='img/sprite/sprite.svg#icon3'></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="info-block">
+              <div class="info-block__city">
+                <span  class="info-block__city-title">
+                  Москва
+                  <svg width='11' height='7'>
+                    <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                  </svg>
+                </span>
+                <ul class="sub-list">
+                  <li class="sub-list__item">
+                    <a href="#">
+                      Москва
+                    </a>
+                  </li>
+                  <li class="sub-list__item">
+                    <a href="#">
+                      Москва
+                    </a>
+                  </li>
+                  <li class="sub-list__item">
+                    <a href="#">
+                      Москва
+                    </a>
+                  </li>
+                  <li class="sub-list__item">
+                    <a href="#">
+                      Москва
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="info-block__contacts">
+                <li class="info-block__tell">
+                  <a href="tel:88006005837">88006005837</a>
+                </li>
+                <li class="info-block__mail">
+                  <a href="mailto:mail@tdavatar.ru">mail@tdavatar.ru</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+          <ul class="header-bottom__right profile-links">
+            <li class="profile-links__item">
+              <a href="#" class="profile-links__link">
+                <svg width="26" height="26">
+                  <use href='img/sprite/sprite.svg#profile'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="profile-links__item">
+              <a href="#" class="profile-links__link">
+                <svg width="26" height="26">
+                  <use href='img/sprite/sprite.svg#favorite'></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="profile-links__item">
+              <a href="#" class="profile-links__link">
+                <!-- <i class="header__link-count">0</i> -->
+                <svg width="26" height="26">
+                  <use href='img/sprite/sprite.svg#basket'></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <button class="burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-box data-mobile-inner">
+      <!-- оббертка мобильного меню должна быть всегда -->
+    </div>
+
+</header>
