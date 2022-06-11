@@ -11,6 +11,10 @@
   display: flex;
   flex-direction: column;
 
+  @media screen and (min-width: 1024px) {
+    border-top: clamp(10px,1.316vw,20px) solid transparent;
+  }
+
 
   &__item {
     font-family: var(--font-family);
@@ -26,6 +30,11 @@
     text-align: left;
     text-decoration: none;
     white-space: nowrap;
+    transition: all .4s;
+
+    &:hover {
+      color: #3671D4;
+    }
 
     @media screen and (max-width: 1240px) {
       padding: 0 10px;
