@@ -163,6 +163,11 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: var(--color-a);
+    transition: all .4s;
+
+    &:hover {
+      background-color: #CED2E1;
+    }
   }
 
   &__info,
@@ -176,6 +181,14 @@ footer {
 
     @media screen and (max-width: 576px) {
       margin: 0 auto;
+    }
+  }
+
+  &__policy  {
+    transition: all .4s;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 
