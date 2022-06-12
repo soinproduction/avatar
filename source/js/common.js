@@ -10,6 +10,17 @@ const breakpoint = 1024;
 const breakpointSecond = 767;
 const body = document.body;
 
+let header = document.querySelector('header');
+let headerTop = document.querySelector('.header-top');
+let sticky = headerTop.clientHeight;
+
+function setHeaderHeight() { // переменная высоты header
+  let headerHeight = header.clientHeight + 'px';
+  let headerTopHeight =  '-' + headerTop.clientHeight + 'px';
+  body.style.setProperty('--header-min-height', headerHeight);
+  body.style.setProperty('--header-top-height', headerTopHeight);
+}
+
 const changeLocation = (elements, parentMobile, parentDesktop) => { // перемещение необходимых эллементов
   let containerWidth = document.documentElement.clientWidth;
   for (const element of elements) {
@@ -34,12 +45,12 @@ const profileLocation = (elements, parentMobile, parentDesktop) => { // пере
   }
 };
 
-
 window.addEventListener("DOMContentLoaded", () => {
   profileLocation(profile, mobileInner, bottomInner);
   changeLocation(replaceElement, mobileInner, bottomInner);
   changeLocation(replaceNav, mobileInner, topInner);
   setHeaderHeight();
+  stickyHeaderFunction();
 });
 
 window.addEventListener("resize", () => {
@@ -47,6 +58,7 @@ window.addEventListener("resize", () => {
   changeLocation(replaceElement, mobileInner, bottomInner);
   changeLocation(replaceNav, mobileInner, topInner);
   setHeaderHeight();
+  stickyHeaderFunction();
 });
 
 const toggleClassOnClick = function(element,button) {
@@ -59,11 +71,6 @@ burgerBtn.addEventListener('click', function(){
   body.classList.toggle('menu-open')
 });
 
-function setHeaderHeight() { // переменная высоты header
-  let header = document.querySelector('header'),
-      headerHeight = header.clientHeight + 'px';
-  body.style.setProperty('--header-min-height', headerHeight)
-}
 
 window.addEventListener('click', function(e){
   if(e.target.classList.contains('menu-open')) {
@@ -71,6 +78,27 @@ window.addEventListener('click', function(e){
     body.classList.toggle('menu-open')
   }
 });
+
+
+const stickyHeaderFunction = () => {
+  window.onscroll = function() {myFunction()};
+  let containerWidth = document.documentElement.clientWidth;
+  if (containerWidth <= breakpointSecond) {
+    sticky = 0
+  }
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add('sticky')
+    } else {
+      header.classList.remove('sticky')
+    }
+  }
+
+};
+
+
+
+
 
 
 
