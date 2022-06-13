@@ -8,7 +8,7 @@
         <div class="header-top__inner replace-navigation">
           <nav class="header-top__nav">
             <ul class="header-top__nav-list">
-              <li class="header-top__nav-item">
+              <li class="header-top__nav-item has-sublist">
                 <a href="#">
                   О нас
                   <svg width='11' height='7'>
@@ -16,7 +16,11 @@
                   </svg>
                 </a>
 
-                <ul class="sub-list">
+                <svg class="opener" width='11' height='7' data-id="1">
+                  <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                </svg>
+
+                <ul class="sub-list" data-content="1">
                   <li class="sub-list__item">
                     <a href="#">
                       Отзывы
@@ -29,14 +33,18 @@
                   </li>
                 </ul>
               </li>
-              <li class="header-top__nav-item">
+              <li class="header-top__nav-item has-sublist">
                 <a href="#">
                   Каталог
                   <svg width='11' height='7'>
                     <use href='img/sprite/sprite.svg#arrow-bottom'></use>
                   </svg>
                 </a>
-                <ul class="sub-list">
+
+                <svg class="opener" width='11' height='7' data-id="2">
+                  <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                </svg>
+                <ul class="sub-list" data-content="2">
                   <li class="sub-list__item">
                     <a href="#">
                       Отзывы
@@ -59,14 +67,19 @@
                   Учебный центр
                 </a>
               </li>
-              <li class="header-top__nav-item">
+              <li class="header-top__nav-item has-sublist">
                 <a href="#">
                   Как сделать заказ
                   <svg width='11' height='7'>
                     <use href='img/sprite/sprite.svg#arrow-bottom'></use>
                   </svg>
                 </a>
-                <ul class="sub-list">
+
+                <svg class="opener" width='11' height='7' data-id="3">
+                  <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                </svg>
+
+                <ul class="sub-list" data-content="3">
                   <li class="sub-list__item">
                     <a href="#">
                       Отзывы
@@ -79,14 +92,18 @@
                   </li>
                 </ul>
               </li>
-              <li class="header-top__nav-item">
+              <li class="header-top__nav-item has-sublist">
                 <a href="#">
                   Контакты
                   <svg width='11' height='7'>
                     <use href='img/sprite/sprite.svg#arrow-bottom'></use>
                   </svg>
                 </a>
-                <ul class="sub-list">
+
+                <svg class="opener" width='11' height='7' data-id="4">
+                  <use href='img/sprite/sprite.svg#arrow-bottom'></use>
+                </svg>
+                <ul class="sub-list" data-content="4">
                   <li class="sub-list__item">
                     <a href="#">
                       Отзывы
@@ -213,6 +230,7 @@
             </li>
             <li class="profile-links__item">
               <a href="#" class="profile-links__link">
+                <i class="profile-links__count">0</i>
                 <svg width="26" height="26">
                   <use href='img/sprite/sprite.svg#favorite'></use>
                 </svg>
@@ -221,7 +239,7 @@
 
             <li class="profile-links__item">
               <a href="#" class="profile-links__link">
-                <!-- <i class="header__link-count">0</i> -->
+                <i class="profile-links__count">10</i>
                 <svg width="26" height="26">
                   <use href='img/sprite/sprite.svg#basket'></use>
                 </svg>

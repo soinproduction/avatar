@@ -75,6 +75,23 @@
     box-shadow: 0 0 28px rgba(0, 0, 0, 0.25);
   }
 
+  .has-sublist .sub-list {
+    position: initial;
+    visibility: visible;
+    opacity: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s;
+    transform: translateY(15px);
+    width: 100%;
+    box-shadow: none;
+    background-color: transparent;
+
+    .sub-list__item {
+      padding: 10px;
+    }
+  }
+
   .profile-links__link {
     width: 43px;
     height: 43px;

@@ -41,8 +41,32 @@
     position: relative;
     padding: 0 calc(clamp(15px, 2.303vw, 35px) / 2);
 
+    .opener {
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+
     @media screen and (max-width: 1240px) {
       padding: 0 10px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      position: relative;
+      width: 100%;
+      padding: 0;
+
+      .opener {
+        position: absolute;
+        right: 0;
+        top: 4px;
+        transition: all .4s;
+
+        &.active {
+          transform: scaleY(-1);
+        }
+      }
+
     }
 
     a {
@@ -59,6 +83,10 @@
           display: none;
         }
       }
+
+      @media screen and (max-width: 1024px) {
+        align-items: flex-start;
+      }
     }
 
     &:hover {
@@ -73,10 +101,6 @@
       .sub-list {
         opacity: 1;
         visibility: visible;
-
-        @media screen and (max-width: 1024px) {
-          display: none;
-        }
       }
     }
   }
