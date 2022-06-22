@@ -1,0 +1,29 @@
+.round-image {
+    @include dfc;
+    width: clamp(200px, 23.882vw, 363px);
+    height: clamp(200px, 23.882vw, 363px);
+    position: relative;
+    z-index: 0;
+    &__bg {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        top: 2%;
+        left: -1%;
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/round.png);
+        z-index: -1;
+        animation: round 50s linear infinite;
+    }
+}
+
+@keyframes round {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

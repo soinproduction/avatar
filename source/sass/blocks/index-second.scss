@@ -1,0 +1,8 @@
+.index-second {
+  background: var(--index-second-bg);
+  box-shadow: 0px 4px 7px rgba(19, 36, 66, 0.1);
+  border-radius: 5px;
+  padding: clamp(20px, 2.961vw, 45px);
+  position: relative;
+  z-index: 5;
+}

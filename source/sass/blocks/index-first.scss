@@ -1,0 +1,34 @@
+.index-first {
+    background-image: url(../img/main-bg.png);
+    @include bg_cover;
+    padding: clamp(50px, 6.579vw, 100px) 0 clamp(35px, 5vw, 76px);
+    &__box {
+        position: relative;
+        min-height: Min(23.882vw, 363px);
+    }
+    &__round {
+        position: absolute;
+        right: Min(3.289vw, 50px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 2.368vw, 36px);
+        max-width: 800px;
+        margin-left: Min(12.303vw, 187px);
+    }
+    &__title {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 800;
+        font-size: clamp(30px, 3.947vw, 60px);
+        line-height: 117%;
+        text-transform: uppercase;
+        color: var(--color-j);
+        * {
+            color: var(--color-i);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.advantage-section {
+  background: linear-gradient(180deg, #3671D4 0%, rgba(54, 113, 212, 0) 100%);
+  padding: clamp(30px, 3.684vw, 56px)
+            0
+            clamp(30px, 3.092vw, 47px);
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(23px, 2.632vw, 40px);
+    line-height: 125%;
+    text-align: center;
+    color: var(--color-a);
+    margin-bottom: clamp(25px, 4.539vw, 69px);
+
+    * {
+      color: var(--primary-link-bg);
+    }
+  }
+
+  &__link {
+    max-width: 450px;
+    height: 48px;
+    margin: 15px auto 0;
+  }
+}
