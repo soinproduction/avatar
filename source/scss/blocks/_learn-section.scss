@@ -1,0 +1,8 @@
+.learn-section {
+  padding: clamp(25px, 3.289vw, 50px) 0 clamp(50px, 7.566vw, 115px);
+  background-color: var(--color-a);
+
+  &__top {
+    margin-bottom: clamp(25px, 3.289vw, 50px);
+  }
+}

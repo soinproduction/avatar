@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="Ru">
-@@include('_head.html',{})
+  @include('partials/head.html')
 
 <body>
-    @@include('_header.html',{})
+    @include('partials/header.html')
 
     <main>
         <section class="index-first">
@@ -113,7 +113,6 @@
           </div>
         </section>
 
-
         <section class="advantage-section">
           <div class="container">
             <div class="advantage-section__box">
@@ -190,12 +189,283 @@
           </div>
         </section>
 
+        <section class="learn-section">
+          <div class="container">
+
+            <div class="main-top learn-section__top">
+              <h2 class="main-top__title">
+                Пройдите обучение <br>
+                в нашем Учебном Центре
+              </h2>
+
+              <p class="main-top__subtitle">
+                Давно мечтаете открыть свой магазин секонд-хенд или у Вас уже есть свой магазин? Мы разработали для наших клиентов проект, который поддерживает их бизнес на всех этапах работы. Выберите свой вариант сотрудничества с нами.
+              </p>
+
+            </div>
+
+            <ul class="learn-list">
+              <li class="learn-list__item">
+                <div class="learn-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/learn.webp'>
+                    <img width='467' height='250' src='img/learn.png' alt='image'>
+                  </picture>
+
+                  <h3 class="learn-list__title">
+                    <span>
+                      Антикризисный вебинар
+                    </span> <br>
+                    "Секон-хенд в новой <br>
+                    реальности. Что дальше?"
+                  </h3>
+                </div>
+
+                <div class="learn-list__bottom">
+                  <p class="learn-list__text">
+                    Мы зовём всех, кто заинтересован работать дальше или только планирует начинать...
+                    <a href="#" class="learn-list__link">
+                      Подробнее
+                      <svg width="17" height="16">
+                        <use href='img/sprite/sprite.svg#next'></use>
+                      </svg>
+                    </a>
+                  </p>
+
+                  <a href="#" class="learn-list__btn primary-link">
+                    Запись на вебинар
+                  </a>
+                </div>
+              </li>
+              <li class="learn-list__item">
+                <div class="learn-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/learn2.webp'>
+                    <img width='467' height='250' src='img/learn2.png' alt='image'>
+                  </picture>
+
+                  <h3 class="learn-list__title">
+                    <span>
+                      Бесплатный
+                    </span> <br>
+                    мастер-класс <br>
+                    по расценке товара
+                  </h3>
+                </div>
+
+                <div class="learn-list__bottom">
+                  <p class="learn-list__text">
+                    Попробуйте на практике поработать с товаром. Узнайте все важные моменты и попробуйте себя в деле...
+                    <a href="#" class="learn-list__link">
+                      Подробнее
+                      <svg width="17" height="16">
+                        <use href='img/sprite/sprite.svg#next'></use>
+                      </svg>
+                    </a>
+                  </p>
+
+                  <a href="#" class="learn-list__btn primary-link">
+                    Запись на вебинар
+                  </a>
+                </div>
+              </li>
+              <li class="learn-list__item">
+                <div class="learn-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/learn3.webp'>
+                    <img width='467' height='250' src='img/learn3.png' alt='image'>
+                  </picture>
+
+                  <h3 class="learn-list__title">
+                    <span>
+                      Программа
+                    </span> <br>
+                      "Ракета Вашего <br>
+                      бизнеса"
+                  </h3>
+                </div>
+
+                <div class="learn-list__bottom">
+                  <p class="learn-list__text">
+                    Откройте свой бизнес секонд-хенд с поддержкой экспертов. Зарегистри-руйтесь в нашей программе и получите бонусы для открытия...
+                    <a href="#" class="learn-list__link">
+                      Подробнее
+                      <svg width="17" height="16">
+                        <use href='img/sprite/sprite.svg#next'></use>
+                      </svg>
+                    </a>
+                  </p>
+
+                  <a href="#" class="learn-list__btn primary-link">
+                    Запись на вебинар
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+
+          </div>
+        </section>
+
+        <section class="questions-section">
+          <div class="container">
+            <div class="main-top questions-section__top">
+              <h2 class="main-top__title">
+                Остались вопросы?
+              </h2>
+            </div>
+
+            <div class="questions-section__box">
+              <div class="team-slider swiper-container">
+                <ul class="team-slider__list swiper-wrapper">
+                  <li class="team-slider__item swiper-slide">
+                    <div class="team-slider__inner">
+                      <div class="team-slider__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/team.webp'>
+                          <img width='145' height='145' src='img/team.png' alt='team_image'>
+                        </picture>
+                      </div>
+                      <div class="team-slider__descr">
+                        <span class="team-slider__name">
+                          Ирина Костина
+                        </span>
+                        <p class="team-slider__subtitle">
+                          Менеджер по продажам
+                        </p>
+                      </div>
+                      <span class="team-slider__geo">
+                        <svg width="13" height="16">
+                          <use href='img/sprite/sprite.svg#geo'></use>
+                        </svg>
+                        Санкт-Петербург
+                      </span>
+                      <a href="tel:+79213013194" class="team-slider__link primary-link">
+                        +7 (921) 301 31 94
+                      </a>
+                    </div>
+                  </li>
+                  <li class="team-slider__item swiper-slide">
+                    <div class="team-slider__inner">
+
+                      <div class="team-slider__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/team2.webp'>
+                          <img width='145' height='145' src='img/team2.png' alt='team_image'>
+                        </picture>
+                      </div>
+
+                      <div class="team-slider__descr">
+                        <span class="team-slider__name">
+                          Ирина Костина
+                        </span>
+                        <p class="team-slider__subtitle">
+                          Менеджер по продажам
+                        </p>
+                      </div>
+
+                      <span class="team-slider__geo">
+                        <svg width="13" height="16">
+                          <use href='img/sprite/sprite.svg#geo'></use>
+                        </svg>
+                        Санкт-Петербург
+                      </span>
+
+                      <a href="tel:+79213013194" class="team-slider__link primary-link">
+                        +7 (921) 301 31 94
+                      </a>
+                    </div>
+                  </li>
+                  <li class="team-slider__item swiper-slide">
+                    <div class="team-slider__inner">
+
+                      <div class="team-slider__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/team3.webp'>
+                          <img width='145' height='145' src='img/team3.png' alt='team_image'>
+                        </picture>
+                      </div>
+
+                      <div class="team-slider__descr">
+                        <span class="team-slider__name">
+                          Ирина Костина
+                        </span>
+                        <p class="team-slider__subtitle">
+                          Менеджер по продажам
+                        </p>
+                      </div>
+
+                      <span class="team-slider__geo">
+                        <svg width="13" height="16">
+                          <use href='img/sprite/sprite.svg#geo'></use>
+                        </svg>
+                        Санкт-Петербург
+                      </span>
+
+                      <a href="tel:+79213013194" class="team-slider__link primary-link">
+                        +7 (921) 301 31 94
+                      </a>
+                    </div>
+                  </li>
+                  <li class="team-slider__item swiper-slide">
+                    <div class="team-slider__inner">
+
+                      <div class="team-slider__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/team4.webp'>
+                          <img width='145' height='145' src='img/team4.png' alt='team_image'>
+                        </picture>
+                      </div>
+
+                      <div class="team-slider__descr">
+                        <span class="team-slider__name">
+                          Ирина Костина
+                        </span>
+                        <p class="team-slider__subtitle">
+                          Менеджер по продажам
+                        </p>
+                      </div>
+
+                      <span class="team-slider__geo">
+                        <svg width="13" height="16">
+                          <use href='img/sprite/sprite.svg#geo'></use>
+                        </svg>
+                        Санкт-Петербург
+                      </span>
+
+                      <a href="tel:+79213013194" class="team-slider__link primary-link">
+                        +7 (921) 301 31 94
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="questions-section__btn slider-btn team-prev">
+                <svg width="17" height="16">
+                  <use href='img/sprite/sprite.svg#prev'></use>
+                </svg>
+              </button>
+
+              <button class="questions-section__btn slider-btn team-next">
+                <svg width="17" height="16">
+                  <use href='img/sprite/sprite.svg#next'></use>
+                </svg>
+              </button>
+
+            </div>
+
+
+
+          </div>
+        </section>
+
 
     </main>
 
-    @@include('_footer.html',{})
 
-    <script type="text/javascript" src="js/common.min.js"></script>
+    @include('partials/footer.html')
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

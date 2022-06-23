@@ -1,0 +1,28 @@
+.questions-section {
+  background-color: var(--index-second-bg);
+  padding: clamp(40px, 5.592vw, 85px)
+  0 clamp(50px, 6.908vw, 105px);
+
+  &__top {
+    margin-bottom: clamp(40px, 4.605vw, 70px);
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+
+    &.team-prev {
+      left: 0;
+    }
+
+    &.team-next {
+      right: 0;
+    }
+  }
+}

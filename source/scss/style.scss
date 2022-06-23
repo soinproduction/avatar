@@ -2,17 +2,16 @@
 @import "general/normalize";
 // ------------------------------- second level
 @import "general/fonts";
+@import "general/vars";
 @import "general/mixins";
-@import "general/variables";
+@import "general/npm-styles";
+@import "general/swiper";
 // ------------------------------- third level
-
-
-
-
-
-
-// -----------------------------
 @import "general/global";
+@import "general/custom-icon";
 @import "general/typography";
 @import "general/blocks";
+
+
+
 

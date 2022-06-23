@@ -1,7 +1,7 @@
 .header-top {
   background-color: var(--color-c);
   padding: clamp(10px, 1.316vw, 20px) 0;
-
+  transition: .2s;
   @media screen and (max-width: 1024px) {
     display: none;
   }
