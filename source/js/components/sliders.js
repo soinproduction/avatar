@@ -1,5 +1,7 @@
 import Swiper from '../vendor/swiper';
 
+
+
 let teamSlider = new Swiper(".team-slider", {
   spaceBetween: 0,
   slidesPerView: 4,
@@ -22,5 +24,16 @@ let teamSlider = new Swiper(".team-slider", {
     1025: {
       slidesPerView: 4,
     }
+  }
+});
+
+let tableSlider = new Swiper(".table-section__slider", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  breakpointsInverse: true,
+  loop: true,
+  navigation: {
+    nextEl: ".table-section__next",
+    prevEl: ".table-section__prev",
   }
 });

@@ -1,0 +1,87 @@
+.choose-section {
+  background: var(--color-a);
+  padding: clamp(50px, 6.579vw, 100px)
+   0 clamp(50px, 7.566vw, 115px);
+
+   &__top {
+    margin-bottom: 30px;
+   }
+
+   &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 35px;
+   }
+
+   &__subtitle {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+    color: var(--color-j);
+    padding-bottom: 85px;
+    position: relative;
+    min-width: 165px;
+    text-align: center;
+
+    @media screen and (max-width: 576px) {
+      padding-bottom: 0;
+    }
+
+
+    &::before,
+    &::after {
+      @include psevdo;
+      width: 39px;
+      height: 56px;
+      background-image: url(../img/sprite/choose-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      bottom: 0;
+
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      transform: scaleX(-1);
+      right: 20px;
+
+
+    }
+
+    &::before {
+      left: 20px;
+    }
+   }
+
+   &__list {
+    grid-gap: Min(6.579vw, 100px);
+    max-width: 950px;
+
+    @media screen and (max-width: 767px) {
+      grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 100%;
+    }
+   }
+
+   &__item {
+    grid-template-columns: clamp(40px, 3.487vw, 53px) 1fr;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 53px 1fr;
+    }
+   }
+}

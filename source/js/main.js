@@ -74,7 +74,7 @@ const toggleClassOnClick = function(element, button) {
 };
 
 burgerBtn.addEventListener('click', function() {
-    toggleClassOnClick(vars.mobileInner, burgerBtn)
+    toggleClassOnClick(mobileInner, burgerBtn)
     body.classList.toggle('menu-open')
 });
 

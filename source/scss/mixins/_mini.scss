@@ -30,6 +30,21 @@
 }
 
 
+@mixin grid-table {
+  display: grid;
+  grid-template-columns: .8fr 1fr .8fr .5fr .5fr 100px;
+  grid-gap: clamp(10px, 1.316vw, 20px);
+  padding: 0 clamp(15px, 1.316vw, 20px) 0 clamp(15px, 2.303vw, 35px);
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 100%;
+    padding: 0;
+    grid-gap: clamp(15px, 3.255vw, 25px);
+  }
+
+}
+
+
 $browser-context: 16; // Default
 
 @function rem($pixels, $context: $browser-context) {

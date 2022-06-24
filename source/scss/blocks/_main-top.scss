@@ -27,6 +27,12 @@
       transform: translateX(-50%);
       background-color: var(--color-i);
     }
+
+    @media screen and (max-width: 576px) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__subtitle {

@@ -1,12 +1,46 @@
 .primary-link {
-  background: var(--primary-link-bg);
-  border-radius: 100px;
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: clamp(15px, 1.184vw, 18px);
   line-height: 100%;
+  font-family: var(--font-family);
+  text-align: center;
   color: var(--color-a);
+
+  background: var(--primary-link-bg);
+  border-radius: 100px;
+
+  @include dfc;
+}
+
+.transparent-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(15px, 1.184vw, 18px);
+  line-height: 100%;
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--color-g);
+
+  background-color: var(--color-a);
+  border: 2px solid var(--primary-link-bg);
+  border-radius: 100px;
+
+  @include dfc;
+}
+
+.all-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--color-f);
+
+  background: var(--color-a);
+  border: 2px solid var(--active-slider-btn);
+  border-radius: 5px;
 
   @include dfc;
 }
