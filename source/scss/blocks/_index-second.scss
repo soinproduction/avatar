@@ -5,4 +5,22 @@
   padding: clamp(20px, 2.961vw, 45px);
   position: relative;
   z-index: 5;
+
+  &__list {
+    @media screen and (max-width: 1025px) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 768px;
+      margin: 0 auto;
+
+      .items-list__icon {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      grid-template-columns: 100%;
+      max-width: 320px;
+    }
+  }
 }

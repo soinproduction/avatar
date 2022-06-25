@@ -1,5 +1,5 @@
-import './_vendor';
-import vars from './_vars';
+// import './_vendor';
+// import vars from './_vars';
 // import './_functions';
 import './_components';
 
@@ -24,7 +24,7 @@ let sticky = headerTop.clientHeight;
 function setHeaderHeight() { // переменная высоты header
     let headerHeight = header.clientHeight + 'px';
     let headerTopHeight = headerTop.clientHeight + 'px';
-    vars.bodyEl.style.setProperty('--header-min-height', headerHeight);
+    body.style.setProperty('--header-min-height', headerHeight);
     body.style.setProperty('--header-top-height', headerTopHeight);
 }
 
@@ -159,7 +159,3 @@ const activateAccordion = function(accordions, handler) {
     }
 }
 activateAccordion(accordions, accordionClickHandler);
-
-
-
-console.log("работает")

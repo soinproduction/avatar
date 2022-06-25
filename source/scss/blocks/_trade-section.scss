@@ -1,0 +1,67 @@
+.trade-section {
+  background-color: var(--color-a);
+  padding: clamp(50px, 6.579vw, 100px)
+  0 clamp(30px, 3.289vw, 50px);
+
+  &__top {
+    margin-bottom: clamp(50px, 6.579vw, 100px);
+  }
+
+
+  &__box {
+    position: relative;
+    min-height: Min(21.974vw, 200px);
+
+    @media screen and (max-width: 1025px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      grid-gap: 50px;
+    }
+
+    @media screen and (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: initial;
+      grid-gap: 50px;
+    }
+  }
+
+  &__list {
+    max-width: Min(67.434vw, 1025px);
+    margin-left: auto;
+
+    @media screen and (max-width: 1025px) {
+      grid-template-columns: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    pointer-events: none;
+    background-image: var(--trade-section-image);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: clamp(200px,21.974vw, 334px);
+    height: clamp(200px,21.974vw, 334px);
+    display: flex;
+    left: 0;
+    top: -40%;
+
+    @media screen and (max-width: 1025px) {
+      position: relative;
+    }
+  }
+
+  &__link {
+    height: 48px;
+    width: 250px;
+    margin: 60px auto 0;
+  }
+
+
+}

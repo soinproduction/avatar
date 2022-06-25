@@ -42,5 +42,9 @@
     font-size: clamp(14px, 1.053vw, 16px);
     line-height: 162%;
     color: var(--color-j);
+
+    span {
+      color: var(--color-i);
+    }
   }
 }
